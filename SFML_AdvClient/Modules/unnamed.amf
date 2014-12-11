@@ -1,0 +1,66 @@
+4
+2
+0
+-1
+Unnamed Module
+0
+400
+80
+660
+420
+1
+Here is the image you wanted.
+1
+1
+185
+5
+185
+95
+dialogAction
+1
+240
+100
+660
+300
+2
+*Hidden*
+Timer 0
+2
+2
+235
+35
+5
+35
+3
+205
+5
+125
+195
+dialogImage
+7
+240
+160
+960
+260
+5
+A1.png
+Size -1; -1
+Pos 10; 10
+Inverse X
+Inverse Y
+0
+dialogImage
+7
+240
+200
+760
+40
+7
+A1.png
+Size 10; 10
+PosRel 0.5; 0
+e_FrontRelX 1.0
+e_Angle 225; 315
+e_Speed 100
+e_Density 1
+0

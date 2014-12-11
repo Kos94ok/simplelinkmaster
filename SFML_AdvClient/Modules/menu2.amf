@@ -1,0 +1,81 @@
+5
+2
+0
+-1
+Unnamed Module
+0
+240
+60
+660
+580
+0
+1
+1
+185
+5
+185
+95
+dialogAction
+1
+240
+100
+480
+320
+2
+*Hidden*
+Timer 0
+3
+2
+235
+35
+5
+35
+3
+205
+5
+125
+235
+4
+85
+5
+135
+55
+dialogImage
+7
+240
+180
+1 000
+220
+6
+A1.png
+Size -1; -1
+Pos 10; 10
+Inverse X
+Inverse Y
+ID lol
+0
+dialogImage
+7
+240
+240
+740
+20
+9
+A1.png
+Size 10; 10
+PosRel 0.5; 0
+e_FrontRelX 1.0
+e_Angle 225; 315
+e_Speed 500
+e_Density 1
+e_Lifespan 5
+e_Period 0.08
+0
+dialogInfo
+0
+240
+60
+420
+240
+0
+0
