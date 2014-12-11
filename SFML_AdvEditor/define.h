@@ -1,0 +1,93 @@
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <Windows.h>
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
+//#include "E:\Workspace\CWork\SFML_AdvClient\ui.h"
+
+#define OBJECT_LIMIT					8192
+#define SELECTION_LIMIT					8192
+#define LINK_LIMIT						32
+#define GRID_STEP						20
+
+#define TEX_EMPTY						0
+
+#define ATTACH_NOTHING					0
+#define ATTACH_DIALOGINFOBOX			1
+#define ATTACH_VIEWPOINTMOVE			2
+#define ATTACH_DIALOGLINK				3
+#define ATTACH_SELECTIONBOX				4
+
+#define TOOL_NOTHING					0
+#define TOOL_LINKER						1
+#define TOOL_TEXT						2
+#define TOOL_MARKER_ENTRY				3
+#define TOOL_MARKER_SUCCESS				4
+#define TOOL_MARKER_FAILURE				5
+#define TOOL_MARKER_BSOD				6
+#define TOOL_MENU						7
+
+#define DIALOGTYPE_ANY					-1
+#define DIALOGTYPE_INFO					0
+#define DIALOGTYPE_ACTION				1
+#define DIALOGTYPE_TELEPORT				2
+#define DIALOGTYPE_SUCCESS				3
+#define DIALOGTYPE_FAILURE				4
+#define DIALOGTYPE_VARIABLE				5
+#define DIALOGTYPE_CONDITION			6
+#define DIALOGTYPE_IMAGE				7
+#define DIALOGTYPE_SOUND				8
+
+#define LINK_INFOTOANY					1
+#define LINK_ACTIONTOANY				2
+#define LINK_TELEPORTTOANY				3
+#define LINK_CONDITIONTOANY				4
+
+#define ATTACH_POINT_A					1
+#define ATTACH_POINT_B					2
+
+#define EDITFIELD_NOTHING				0
+#define EDITFIELD_TOP					1
+#define EDITFIELD_BOTTOM				2
+#define EDITFIELD_GLOBAL				3
+
+#define EDITTARGET_NOTHING				0
+#define EDITTARGET_SAVEPATH				1
+#define EDITTARGET_LOADPATH				2
+
+#define MENU_NOTHING					0
+#define MENU_MAIN						1
+#define MENU_REMEMBER					2
+#define MENU_CREATE_DIALOGINFO			3
+#define MENU_CREATE_DIALOGACTION		4
+#define MENU_GENERAL					5
+#define MENU_CREATE						6
+#define MENU_ADDOBJECT					7
+#define MENU_TOOLS						8
+#define MENU_OTHER						9
+#define MENU_EXIT						10
+
+#define MENU_ACTION_CLEARMODULE			50
+#define MENU_ACTION_SAVEMODULE			51
+#define MENU_ACTION_LOADMODULE			52
+#define MENU_ACTION_CREATEINFO			60
+#define MENU_ACTION_CREATEACTION		61
+#define MENU_ACTION_CREATETELEPORT		62
+#define MENU_ACTION_CREATEVARIABLE		63
+#define MENU_ACTION_CREATECONDITION		64
+#define MENU_ACTION_CREATEIMAGE			65
+#define MENU_ACTION_CREATESOUND			66
+#define MENU_ACTION_SELECTNOTHING		70
+#define MENU_ACTION_SELECTLINKER		71
+#define MENU_ACTION_SELECTTEXT			72
+#define MENU_ACTION_SELECTENTRY			73
+#define MENU_ACTION_SELECTSUCCESS		74
+#define MENU_ACTION_SELECTFAILURE		75
+#define MENU_ACTION_COPYOBJECTS			80
+#define MENU_ACTION_DELETEOBJECTS		81
+#define MENU_ACTION_QUICKTEST			82
+#define MENU_ACTION_REDO				83
+#define MENU_ACTION_UNDO				84
